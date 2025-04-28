@@ -1,0 +1,9 @@
+# Environnement virtuel
+projdatbi/
+# Fichiers VS Code
+.cursor/
+# Cache Python
+__pycache__/
+*.pyc
+# Fichiers de données trop lourds
+data/
