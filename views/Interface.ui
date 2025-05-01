@@ -22,6 +22,40 @@
         <property name="title">
          <string>Fiabilité de la prédiction</string>
         </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>20</y>
+           <width>311</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="labelFiabilite">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </item>
      </layout>
@@ -33,6 +67,40 @@
         <property name="title">
          <string>Heat Map</string>
         </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>20</y>
+           <width>311</width>
+           <height>302</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="labelHeatmap">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </item>
      </layout>
@@ -88,7 +156,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout">
               <item>
-               <widget class="QComboBox" name="comboBox">
+               <widget class="QComboBox" name="comboMagasin">
                 <property name="maximumSize">
                  <size>
                   <width>300</width>
@@ -129,7 +197,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_3">
               <item>
-               <widget class="QComboBox" name="comboBox_2">
+               <widget class="QComboBox" name="comboDuree">
                 <property name="maximumSize">
                  <size>
                   <width>300</width>
@@ -147,7 +215,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
-               <widget class="QPushButton" name="pushButton">
+               <widget class="QPushButton" name="predictionBtn">
                 <property name="maximumSize">
                  <size>
                   <width>200</width>
@@ -176,6 +244,40 @@
         <property name="title">
          <string>Prédiction des ventes </string>
         </property>
+        <widget class="QWidget" name="verticalLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>20</y>
+           <width>301</width>
+           <height>302</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QLabel" name="labelPrediction">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </item>
      </layout>
