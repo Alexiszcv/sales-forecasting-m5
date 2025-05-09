@@ -28,7 +28,7 @@
            <x>90</x>
            <y>20</y>
            <width>311</width>
-           <height>291</height>
+           <height>302</height>
           </rect>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -48,9 +48,6 @@
             </property>
             <property name="text">
              <string>TextLabel</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
             </property>
            </widget>
           </item>
@@ -78,7 +75,7 @@
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <property name="spacing">
-           <number>-1</number>
+           <number>6</number>
           </property>
           <item>
            <widget class="QLabel" name="labelHeatmap">
@@ -96,9 +93,6 @@
             </property>
             <property name="text">
              <string>TextLabel</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
             </property>
            </widget>
           </item>
@@ -129,11 +123,8 @@
            <layout class="QVBoxLayout" name="verticalLayout_6">
             <item>
              <spacer name="verticalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
               <property name="sizeType">
-               <enum>QSizePolicy::Policy::Maximum</enum>
+               <enum>QSizePolicy::Fixed</enum>
               </property>
               <property name="sizeHint" stdset="0">
                <size>
@@ -154,6 +145,9 @@
               <property name="text">
                <string>Choisir un magasin : </string>
               </property>
+              <property name="margin">
+               <number>6</number>
+              </property>
              </widget>
             </item>
             <item>
@@ -170,21 +164,33 @@
               </item>
              </layout>
             </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
             <item>
-             <spacer name="verticalSpacer">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Choisir un produit : </string>
               </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Policy::Maximum</enum>
+              <property name="margin">
+               <number>6</number>
               </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>30</height>
-               </size>
-              </property>
-             </spacer>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QComboBox" name="comboProduit">
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
           </item>
@@ -194,6 +200,9 @@
              <widget class="QLabel" name="label_2">
               <property name="text">
                <string>Choisir une prédiction pour : </string>
+              </property>
+              <property name="margin">
+               <number>6</number>
               </property>
              </widget>
             </item>
@@ -252,7 +261,7 @@
           <rect>
            <x>90</x>
            <y>20</y>
-           <width>301</width>
+           <width>302</width>
            <height>302</height>
           </rect>
          </property>
@@ -273,9 +282,6 @@
             </property>
             <property name="text">
              <string>TextLabel</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
             </property>
            </widget>
           </item>

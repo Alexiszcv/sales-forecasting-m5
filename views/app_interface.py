@@ -3,6 +3,10 @@ from PyQt6.QtWidgets import QMainWindow, QWidget
 from PyQt6.QtGui import QPixmap
 from utils.paths import ICON_FIABILITE, ICON_HEATMAP, ICON_PREDICTION
 from PyQt6.QtCore import Qt
+from utils.constant import AVAILABLE_PRODUCTS, AVAILABLE_STORES
+from models.predictions import predict_sales
+from controller.get_user_inputs import get_user_inputs
+from controller.plotting import plot_prediction_on_label
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -35,15 +39,17 @@ class MainWindow(QMainWindow):
         self.ui.comboDuree.addItem("Sélectionner")
         self.ui.comboDuree.addItems(["1 jour", "1 semaine", "1 mois", "1 an"])
 
-        # ComboBox Villes disponibles 
-        # Tu peux les lire dynamiquement avec pandas si tu veux, mais en dur :
-        villes_disponibles = ["CA_1", "CA_2", "TX_1", "WI_2"]  # à adapter à ton dataset M5
-        self.ui.comboMagasin.addItem("Sélectionner")
-        self.ui.comboMagasin.addItems(villes_disponibles)
+        self.ui.comboProduit.addItem("Sélectionner")
+        self.ui.comboProduit.addItems(AVAILABLE_PRODUCTS)
 
+        self.ui.comboMagasin.addItem("Sélectionner")
+        self.ui.comboMagasin.addItems(AVAILABLE_STORES)
+
+    # Dans app_interface.py
     def lancer_prediction(self):
-        # 🔸 Ici tu vas :
-        # - effacer les icônes (clear)
-        # - lancer la prédiction
-        # - afficher les résultats
         print("Prédiction en cours...")
+        inputs = get_user_inputs(self.ui)
+        X_test, y_pred = predict_sales(inputs)
+        plot_prediction_on_label(X_test, y_pred, self.ui.labelPrediction)
+
+        

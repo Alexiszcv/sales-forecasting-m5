@@ -12,7 +12,7 @@ sell_prices = pd.read_csv(DATA_SELL_PRICES)
 
 # Sélection du magasin et des produits
 store = ['CA_1']
-product_ids = ['FOODS_1_002'] #, 'FOODS_1_002', 'FOODS_1_003']  # à adapter si nécessaire
+product_ids = ['FOODS_1_002'] #, 'FOODS_1_002', 'FOODS_1_003']  
 
 def merge_calendar_and_sell_dataset(df_long):
     calendar['wm_yr_wk'] = pd.to_numeric(calendar['wm_yr_wk'], errors='coerce')
