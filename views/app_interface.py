@@ -29,11 +29,6 @@ class MainWindow(QMainWindow):
         self.ui.labelFiabilite.setPixmap(QPixmap(ICON_FIABILITE))
         self.ui.labelFiabilite.setScaledContents(True)
         self.ui.labelHeatmap.setMinimumSize(200, 200) 
-
-        self.ui.labelPrediction.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.ui.labelHeatmap.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.ui.labelFiabilite.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
         # ComboBox Périodes de prédiction
 
 
