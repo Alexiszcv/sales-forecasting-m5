@@ -16,7 +16,6 @@ def get_user_inputs(ui) -> dict:
     "1 an": 365
     }
     period = periode_mapping.get(selected_period, 30)  # valeur par défaut : 30 jours
-    print(period, selected_product, selected_store)
 
     return {
         "store_id": selected_store,

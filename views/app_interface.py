@@ -49,7 +49,7 @@ class MainWindow(QMainWindow):
     def lancer_prediction(self):
         print("Prédiction en cours...")
         inputs = get_user_inputs(self.ui)
-        X_test, y_pred = predict_sales(inputs)
-        plot_prediction_on_label(X_test, y_pred, self.ui.labelPrediction)
+        X_test, y_pred, y_real = predict_sales(inputs)
+        plot_prediction_on_label(X_test, y_pred, y_real, self.ui.labelPrediction)
 
         
