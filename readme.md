@@ -33,3 +33,20 @@ Voir [requirements.txt](./requirements.txt).
 
 Ce projet est destiné à un usage éducatif et non commercial uniquement.
 # sales-forecasting-m5
+
+## Cleaning des données
+
+Visualisation des données:
+
+Beaucoup de journées à 0 vente (voir histogramme)
+
+Organisation des données:
+
+Aucune valeur vide sauf pour les colonnes "évènements" signalant si un évènement particulier était arrivé ce jour là. 
+On a d'abord décidé de les remplacer par None au lieu de Nan. 
+
+## Première méthode envisagée
+
+Utilisation de Random Forest
+
+Premier constat: Le classifieur "toujours prédire 0 vente" est meilleur 
