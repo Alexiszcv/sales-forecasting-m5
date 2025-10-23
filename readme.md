@@ -28,8 +28,3 @@ L'objectif est de construire des modèles prédictifs capables d'anticiper les v
 ## Dépendances
 
 Voir [requirements.txt](./requirements.txt).
-
-## Licence
-
-Ce projet est destiné à un usage éducatif et non commercial uniquement.
-# sales-forecasting-m5
